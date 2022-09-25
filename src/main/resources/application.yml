@@ -1,18 +1,18 @@
 spring:
   datasource:
-    username: root
-    password: h2udh4idsa
+    username: 数据库用户名
+    password: 数据库密码
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://118.195.249.221:3306/main_database?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: 数据库url
     hikari:
       idle-timeout: 60000
       max-lifetime: 65000
       minimum-idle: 2
       maximum-pool-size: 8
   redis:
-    host: 118.195.249.221
+    host: redis地址
     port: 6379
-    password: h2udh4ishaow7kdnxixn3ejsj
+    password: redis密码
     database:
       db0: 0
       db1: 1
@@ -26,12 +26,12 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: nacos地址
         namespace: public
-        username: nacos
-        password: nacos
-        service: authentic
-        ip: 127.0.0.1
+        username: nacos用户名
+        password: nacos密码
+        service: 服务组名称
+        ip: 应该发布的ip
 mybatis:
   mapper-locations: classpath:mappers/*.xml
 server:
