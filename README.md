@@ -1,0 +1,2 @@
+# Springboot-Gradle-Template
+使用gradle构建，集成了mysql、redis客户端和部分springcloud组件的springboot服务端template
