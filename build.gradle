@@ -4,14 +4,14 @@ plugins {
     id 'java'
 }
 
-group = 'cn.realdragonking'
+group = 'com.blog'
 version = '1.0'
 sourceCompatibility = '11'
 
 jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
-        attributes 'Main-Class': 'cn.realdragonking.Application'
+        attributes 'Main-Class': 'com.blog.Application'
     }
     from {
         (configurations.runtimeClasspath).collect {
