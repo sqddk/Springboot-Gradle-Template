@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    username: root
+    password: h2udh4idsa
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://118.195.249.221:3306/main_database?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    hikari:
+      idle-timeout: 60000
+      max-lifetime: 65000
+      minimum-idle: 2
+      maximum-pool-size: 8
+  redis:
+    host: 118.195.249.221
+    port: 6379
+    password: h2udh4ishaow7kdnxixn3ejsj
+    database:
+      db0: 0
+      db1: 1
+      db2: 2
+    lettuce:
+      pool:
+        max-active: 100
+        max-idle: 3
+        min-idle: 0
+        max-wait: -1
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+        service: authentic
+        ip: 127.0.0.1
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+server:
+  address: 127.0.0.1
+  port: 4000
