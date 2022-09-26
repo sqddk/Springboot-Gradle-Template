@@ -59,17 +59,17 @@ public class RedisConfig {
 
     @Bean(name = "redisTemplate0")
     public RedisTemplate<String, String> createRedisTemplate0(){
-        return this.createRedisTemplate(this.createRedisConnectionFactory(0));
+        return this.createRedisTemplate(this.createRedisConnectionFactory(this.db0));
     }
 
     @Bean(name = "redisTemplate1")
     public RedisTemplate<String, String> createRedisTemplate1(){
-        return this.createRedisTemplate(this.createRedisConnectionFactory(1));
+        return this.createRedisTemplate(this.createRedisConnectionFactory(this.db1));
     }
 
     @Bean(name = "redisTemplate2")
     public RedisTemplate<String, String> createRedisTemplate2(){
-        return this.createRedisTemplate(this.createRedisConnectionFactory(2));
+        return this.createRedisTemplate(this.createRedisConnectionFactory(this.db2));
     }
 
     private RedisConnectionFactory createRedisConnectionFactory(int db){
