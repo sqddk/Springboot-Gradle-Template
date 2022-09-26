@@ -47,6 +47,7 @@ dependencies {
             'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery',
             'org.springframework.cloud:spring-cloud-starter-openfeign',
             'org.springframework.cloud:spring-cloud-starter-loadbalancer',
+            'org.springframework.cloud:spring-cloud-starter-gateway',
             fileTree(dir:'libs',includes:['*.jar'])
     )
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
