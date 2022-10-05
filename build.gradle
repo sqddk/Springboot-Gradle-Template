@@ -47,6 +47,9 @@ dependencies {
             'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery',
             'org.springframework.cloud:spring-cloud-starter-openfeign',
             'org.springframework.cloud:spring-cloud-starter-loadbalancer',
+            'org.apache.dubbo:dubbo-spring-boot-starter:3.0.7',
+            'org.apache.dubbo:dubbo-registry-nacos:3.0.2.1',
+            'org.apache.dubbo:dubbo:3.0.2.1',
             fileTree(dir:'libs',includes:['*.jar'])
     )
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
