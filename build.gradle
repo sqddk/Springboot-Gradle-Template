@@ -43,7 +43,7 @@ dependencies {
             'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2',
             'org.springframework.boot:spring-boot-starter-data-redis',
             'org.apache.commons:commons-pool2:2.11.1',
-            'com.alibaba.fastjson2:fastjson2:2.0.14',
+            'com.alibaba.fastjson2:fastjson2:2.0.17',
             'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery',
             'org.springframework.cloud:spring-cloud-starter-openfeign',
             'org.springframework.cloud:spring-cloud-starter-loadbalancer',
